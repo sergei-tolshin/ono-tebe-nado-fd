@@ -1,1 +1,103 @@
-/* место для вашего кода */
+/* start header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+  font-size: 18px;
+}
+
+.header__menu {
+
+}
+
+.header__links-list {
+  display: flex;
+  gap: 13px;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: underline;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo-image {
+
+}
+
+.header__address {
+  font: inherit;
+  max-width: 240px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* end header */
+
+/* footer */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__menu {
+
+}
+
+.footer__menu-list {
+
+}
+
+.footer__menu-list-item {
+
+}
+
+.footer__menu-link {
+
+}
+
+.footer__menu-link_active {
+
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 240px;
+  justify-self: end;
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-icon {
+
+}
