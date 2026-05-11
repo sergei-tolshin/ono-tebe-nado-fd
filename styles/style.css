@@ -14,7 +14,6 @@
 }
 
 /* start header */
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -27,17 +26,12 @@
 
 .header__links-list {
   display: flex;
-  gap: 0 32px;
+  gap: 32px;
   list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
-}
-
-.header__link {
-  text-decoration: underline;
-  text-underline-position: under;
 }
 
 .header__link_active {
@@ -55,10 +49,7 @@
   justify-self: end;
   max-width: 240px;
 }
-
 /* end header */
-
-/* start main */
 
 /* start cover*/
 .cover {
@@ -86,7 +77,7 @@
 }
 
 .aligned-text {
-  margin-right: -30px;
+  margin-right: -30px;  /* Убираем отступ в конце из-за letter-spacing*/
 }
 
 .aligned-text_center {
@@ -146,6 +137,7 @@
 }
 
 .card-link {
+  display: block;
   height: 100%;
   color: #fff;
   text-decoration: none;
@@ -211,7 +203,7 @@
   margin: 35px auto 0;
   border-radius: 50%;
   padding: 0 46px;
-  background-color: black;
+  background-color: #000;
 }
 
 .about__title {
@@ -229,9 +221,7 @@
 }
 /* end about*/
 
-/* end main*/
-
-/* footer */
+/* start footer */
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -250,10 +240,6 @@
   line-height: 22px;
 }
 
-.footer__menu-link {
-  text-decoration: underline;
-}
-
 .footer__menu-link_active {
   text-decoration: none;
 }
@@ -261,8 +247,7 @@
 .footer__social-list {
   display: flex;
   justify-self: end;
-  justify-content: center;
-  gap: 0 48px;
+  gap: 48px;
   max-width: 240px;
   list-style: none;
 }
@@ -272,3 +257,4 @@
   width: 48px;
   height: 48px;
 }
+/* end footer */
