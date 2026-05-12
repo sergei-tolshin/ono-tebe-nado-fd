@@ -77,14 +77,16 @@
 }
 
 .aligned-text {
-  margin-right: -30px;  /* Убираем отступ в конце из-за letter-spacing*/
+  width: 100%;
 }
 
 .aligned-text_center {
+  margin-left: 15px;  /* Компенсирует половину letter-spacing (30px/2) */
   text-align: center;
 }
 
 .aligned-text_right {
+  margin-left: 30px;  /* Полностью компенсирует letter-spacing */
   text-align: right;
 }
 
